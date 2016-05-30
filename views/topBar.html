@@ -1,0 +1,12 @@
+<div id="topBar">
+    <div id="logo">
+	</div>
+
+    <div id="topBarButtonsContainer">
+        <div ng-repeat="topBarButton in topBarButtons"
+             class="topBarButtonSingle"
+             ng-click="onTopBarButtonClicked(topBarButton)">
+            {{ topBarButton.text }}
+        </div>
+    </div>
+</div>
