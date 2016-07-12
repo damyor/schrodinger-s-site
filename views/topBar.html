@@ -6,7 +6,11 @@
         <div ng-repeat="topBarButton in topBarButtons"
              class="topBarButtonSingle"
              ng-click="onTopBarButtonClicked(topBarButton)">
-            {{ topBarButton.text }}
+            {{ topBarButton.text | Translate}}
+        </div>
+        <div class="languages">
+            <div class="language" ng-class="selectedLanguage" ng-click="languagesShown = !languagesShown"></div>
+            <div class="language" ng-show="languagesShown" ng-repeat="language in languages" ng-class="language" ng-click="selectLanguage(language)"></div>
         </div>
     </div>
 </div>
