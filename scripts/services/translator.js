@@ -6,7 +6,6 @@ angular.module('schrodinger').service('Translator', function(Languages) {
     };
     
     this.translate = function(key) {
-        console.log(currentLanguage, key);
         return Languages[currentLanguage][key];
     };
 });
