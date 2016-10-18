@@ -1,9 +1,7 @@
-var schrodinger = angular.module('schrodinger', ['ui.bootstrap']);
+var schrodinger = angular.module('schrodinger', []);
 
 schrodinger.controller('mainController', ['$scope', function($scope) {
-	$scope.currentView = 'top.home';
-
-	$scope.changeView = function (view) {
-		$scope.currentView = view;
-	}
+    $scope.moveDown = function () {
+        $scope.moved = true;
+    };
 }]);
