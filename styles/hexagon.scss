@@ -1,0 +1,21 @@
+hexagon {
+    .top {
+        width: 0;
+        border-bottom: 30px solid red;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+    }
+
+    .middle {
+        width: 104px;
+        height: 60px;
+        background-color: red;
+    }
+
+    .bottom {
+        width: 0;
+        border-top: 30px solid red;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+    }
+}
