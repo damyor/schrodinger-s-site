@@ -4,10 +4,13 @@ hexagon {
         border-style: solid;
         border-color: transparent;
         border-bottom-color: red;
+
+        margin-bottom: -1px;
     }
 
     .middle {
         background-color: red;
+        border-color: red;
     }
 
     .bottom {
@@ -15,5 +18,7 @@ hexagon {
         border-style: solid;
         border-color: transparent;
         border-top-color: red;
+
+        margin-top: -1px;
     }
 }

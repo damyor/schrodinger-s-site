@@ -4,7 +4,8 @@ angular.module('schrodinger').directive('hexagon', function () {
     return {
         templateUrl: 'views/hexagon.html',
         scope: {
-            width: '='
+            width: '=',
+            rotation: '='
         },
         link: function ($scope, $element) {
             var top = angular.element($element[0].querySelector('.top')),
@@ -22,6 +23,10 @@ angular.module('schrodinger').directive('hexagon', function () {
                 bottom.css('border-top-width', Math.round($scope.width / 2 / Math.sqrt(3)));
                 bottom.css('border-right-width', Math.round($scope.width / 2));
                 bottom.css('border-left-width', Math.round($scope.width / 2));
+            });
+
+            $scope.$watch('rotation', function () {
+                $element.css('transform', 'rotate(' + $scope.rotation + 'deg)');
             });
         }
     };
